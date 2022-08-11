@@ -1,0 +1,255 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+	scroll-behavior: smooth;
+	transition: 2s;
+}
+
+/* Loading Animation  */
+.open1
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: 10000;
+}
+.open1 .layer
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-origin: top;
+	animation: open 1s ease-in-out forwards;
+}
+.open1 .layer:nth-child(1)
+{
+	background: #000;
+	z-index: 2;
+}
+.open1 .layer:nth-child(2)
+{
+	background: #03a9f4;
+	animation-delay: 1s;
+	z-index: 1;
+}
+@keyframes open
+{
+	0%
+	{
+		transform: scaleY(1);
+	}
+	100%
+	{
+		transform: scaleY(0);
+	}
+}
+/* End of Loading Animation  */
+
+/* Hamburger menu  */
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+	border: none;
+	outline: none;
+    transition: alls 0.25s;
+    position: relative;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: black;
+    transform: rotate(0);
+    transition: all 0.5s;
+	text-align: center;
+}
+.hamburger-middle{
+    transform: translateY(7px);
+}
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+
+.open{
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-middle{
+    display: none;
+}
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px); 
+}
+
+
+/* End of Hamburger menu  */
+
+.sci
+{
+	position: absolute;
+	bottom: 15px;
+	right: 50px;
+	display: flex;
+	flex-direction: column;
+}
+.sci li
+{
+	opacity: 1;
+	display: block;
+	list-style: none;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.sci li a
+{
+	font-size: 1.2em;
+	color: #000;
+}
+
+.element2
+{
+	opacity: 0;
+	position: absolute;
+	left: -10px;
+	top: 40%;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #000;
+	animation: rotate 30s linear infinite, fadeIn 1s linear forwards;
+	animation-delay: 7s;
+}
+.fa-brands{
+	color: white;
+	font-size: 40px;
+}
+@keyframes rotate
+{
+	0%
+	{
+		transform: rotate(45deg);
+	}
+	100%
+	{
+		transform: rotate(405deg);
+	}
+}
+
+.project{
+    width: 90%;
+    height: 40vh;
+    margin: 20px 10px;
+    border: 2px solid rgb(243,242,242);
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+.project-browser{
+    height: 30px;
+    background-color: rgb(243,242,242);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 2;
+}
+.project-circle{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 5px;
+    /* background-color: white; */
+}
+.project-circle:nth-child(1){
+    background-color: red;
+}
+.project-circle:nth-child(2){
+    background-color: yellow;
+}
+.project-circle:nth-child(3){
+    background-color: green;
+}
+.project-img{
+    width: 100%;
+    transition: all 10s ease;;
+}
+.project:hover .project-img{
+    transform: translateY(-100%);
+}
+.project-img{
+    width: 100%;
+    transition: all 10s ease;;
+}
+.project:hover .project-img{
+    transform: translateY(-100%);
+}
+.contact-bg{
+	width: 20px;
+	height: 100%;
+	background-color: #03a9f4;
+	position: absolute;
+}
+.wrapper{
+	padding: 50px;
+	display: flex;
+}
+.c-left{
+	flex: 1;
+}
+.c-right{
+	flex: 1;
+}
+.c-info-item{
+	display: flex;
+	align-items: center;
+	margin: 50px 0px;
+	font-weight: 300;
+	font-size: 20px;
+}
+.fa{
+	font-size: 40px;
+	margin-right: 20px;
+	color: #000;
+}
+form{
+	margin-top: 20px;
+}
+input{
+	width: 50%;
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid black;
+	margin: 10px 0px;
+	font-size: 14px;
+	padding-left: 10px;
+	outline: none;
+}
+textarea{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid black;
+	margin: 10px 0px;
+	font-size: 14px;
+	padding-left: 10px;
+	outline: none;
+}
+.submit-btn{
+	border: 1px solid black;
+	padding: 15px;
+	background-color: #000;
+	color: white;
+}

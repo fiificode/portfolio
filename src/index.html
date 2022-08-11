@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <title>FiiFranklin|Portfolio</title>
+</head>
+<body class="font-Raleway">
+    <div class="open1">
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
+    <!-- Navbar  -->
+    <nav class="relative container mx-auto p-6">
+        <!-- flex container  -->
+        <div class="flex items-center justify-between">
+            <!-- Logo  -->
+            <div class="img-logo">
+                <!-- <a href="#" class="font-light"><h1 class="text-2xl">Fiificode</h1></a> -->
+                <img class="h-8" src="./img/rsz_fiificode-logo-black.png" alt="">
+            </div>
+            <!-- Menu Items  -->
+            <div class="hidden md:flex space-x-6">
+                <a class="hover:text-white hover:bg-black" href="#home">Home</a>
+                <a class="hover:text-white hover:bg-black" href="#about">About</a>
+                <a class="hover:text-white hover:bg-black" href="#portfolio">Portfolio</a>
+                <a class="hover:text-white hover:bg-black" href="#contact">Contact</a>
+            </div>
+            <!-- Button  -->
+            <a class=" hidden p-3 px-6 pt-2 text-black bg-brightRed rounded border-2 border-black self-baseline hover:bg-black hover:text-white md:block" href="#contact">Hire Me!</a>
+
+            <!-- Hamburger icon  -->
+            <button id="menu-btn" class="hamburger block md:hidden">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <!-- Mobile Menu  -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute z-20 flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#home" class="font-light md:hover:p-14 hover:text-white hover:bg-black text-xl">Home</a>
+                <a href="#about" class="font-light hover:text-white hover:bg-black text-xl">About</a>
+                <a href="#portfolio" class="font-light hover:text-white hover:bg-black text-xl">Portfolio</a>
+                <a href="#contact" class="font-light hover:text-white hover:bg-black text-xl">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section  -->
+    <section id="home">
+        <!-- Flex Container  --> 
+        <div class="container relative flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-5 space-y-0 md:space-y-2">
+            <!-- Left item  -->
+            <div class="bannerText flex flex-col mb-32 space-y-1 md:w-1/2">
+                <h2 class="max-w-md text-xl mt-6 font-extralight text-center md:text-xl md:text-left">HELLO, MY NAME IS</h2>
+                <h3 class="max-w-md text-2xl font-black text-center md:text-6xl xl:text-9xl md:text-left">FRANKLIN</h3>
+                <h3 class="max-w-md text-2xl font-black text-center md:text-6xl xl:text-9xl md:text-left">MENSAH</h3>
+                <p class="max-w-sm text-center text-black font-light md:mr-10 md:text-left">
+                    I'm a frontend developer. I design and developer services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores
+                </p>
+                <div class="flex justify-center mt-5 md:justify-start">
+                    <a class="p-3 px-6 pt-2 text-white border-2 border-black bg-black rounded self-baseline hover:bg-white hover:text-black hover:border-2" href="#">Download my Cv</a>
+                </div>
+            </div>
+            <!-- Right item-image  -->
+            <div class="m-1/2 md:relative md:justify-center md:flex">
+                <!-- <div class="md:relative mb-10 -z-10 md:w-1/2 md:justify-center md:items-center md:flex"> -->
+                    <img class=" w-50 h-60 md:w-9/12 md:h-fit lg:w-full" src="./img/port-removebg-preview.png" alt="">
+                </div>
+                <ul class="sci top-12 md:right-0 md:top-60 lg:top-[375px]">
+                    <li><a href="https://www.github.com" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="element2"></div>
+    </section>
+
+    <!-- About Me Section  -->
+    <section id="about" class="contaier mx-auto w-full bg-black max-h-full">
+        <!-- flex-container  -->
+        <div class="flex flex-col-reverse md:flex-row items-center py-6 px-6 mx-auto mt-10 space-y-0 md:space-y-0"">
+            <!-- left-item-skills -->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+                <div class="grid grid-cols-3 gap-2 md:grid md:items-center md:grid-cols-3 space-x-2 bg-black">
+                    <img class="w-14 p-2 ml-2 h-12 md:h-28 md:w-20 bg-white" src="./img/html5-brands.svg" alt="">
+                    <img class="w-14 p-2 h-12 md:h-28 md:w-20 bg-white" src="./img/css3-brands.svg" alt="">
+                    <img class="w-14 p-2 h-12 md:h-28 md:w-20 bg-white" src="./img/js-brands.svg" alt="">
+                    <img class="w-14 p-2 h-12 md:h-28 md:w-20 bg-white" src="./img/react-brands.svg" alt="">
+                    <img class="w-14 p-2 h-12 md:h-28 md:w-20 bg-white" src="./img/wordpress-brands.svg" alt="">
+                    <img class="w-14 p-2 h-12 md:h-28 md:w-20 bg-white" src="./img/git-alt-brands.svg" alt="">
+                </div>
+            </div>
+            <!-- Right item-about-me -->
+            <div class="flex items-center flex-col md:w-1/2">
+                <h2 class="text-5xl mb-7 text-white font-extralight">About Me</h2>
+                <p class="max-w-sm mb-9 font-extralight text-white text-center md:text-center">
+                   I'm a skilled and creative frontend developer based in Accra,Ghana. I enjoy creating things that live on the internet. My interest in web development started back in 2017 when i wanted a website for my online shop.That's when i got introduced to web technologies like HTML and CSS which amazed me on how i can use skills like these two to build something for the web.
+                   I got more into learning the technologies and tools that helps in creating websites.
+                   My roadmap included learning techonologies like HTML,CSS,Javascript,REACT,Wordpress,Tailwind etc. 
+                   I have used these technologies to build web applications for clients and also myself.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio section  -->
+    <section id="portfolio">
+        <!-- flex container  -->
+        <div class="max-w-full px-5 mx-auto mt-16 text-center md:max-w-full">
+            <!-- heading  -->
+            <h2 class="text-4xl font-extralight mb-5">Create and Inspire- My Works</h2>
+            <p class="text-sm font-light text-center">This is a creative portfolio that your work has been waiting for.Beautiful, stunning portfolio styles and a whole lot more inside.</p>
+            <!-- Portfolio display  -->
+            <div class="flex flex-col justify-center items-center w-full md:flex md:flex-row md:flex-wrap">
+                <div class="project md:w-2/5 lg:w-1/4 md:h-80 lg:h-80">
+                    <div class="project-browser">
+                        <div class="project-circle"></div>
+                        <div class="project-circle"></div>
+                        <div class="project-circle"></div>
+                    </div>
+                    <a href="" target="_blank" rel="noreferrer">
+                        <img class="project-img" src="https://user-images.githubusercontent.com/84854612/178148006-ba32acdc-7887-4e77-9592-c2da3ccf89ab.png" alt="">
+                    </a>
+                </div>
+                <div class="project md:w-2/5 lg:w-1/4 md:h-80 lg:h-80">
+                    <div class="project-browser">
+                        <div class="project-circle"></div>
+                        <div class="project-circle"></div>
+                        <div class="project-circle"></div>
+                    </div>
+                    <a href="" target="_blank" rel="noreferrer">
+                        <img class="project-img" src="https://user-images.githubusercontent.com/84854612/178147410-9a25f134-5a22-4315-85dd-1c5c20ca2c6c.png" alt="">
+                    </a>
+                </div>
+                <div class="project md:w-2/5 lg:w-1/4 md:h-80 lg:h-80">
+                    <div class="project-browser">
+                        <div class="project-circle"></div>
+                        <div class="project-circle"></div>
+                        <div class="project-circle"></div>
+                    </div>
+                    <a href="" target="_blank" rel="noreferrer">
+                        <img class="project-img" src="https://user-images.githubusercontent.com/84854612/178147083-6450f452-deb5-42a6-a09f-85877c162d3e.png" alt="">
+                    </a>
+                </div>
+                <div class="project md:w-2/5 lg:w-1/4 md:h-80 lg:h-80">
+                    <div class="project-browser">
+                        <div class="project-circle"></div>
+                        <div class="project-circle"></div>
+                        <div class="project-circle"></div>
+                    </div>
+                    <a href="" target="_blank" rel="noreferrer">
+                        <img class="project-img" src="https://user-images.githubusercontent.com/84854612/178147683-1cfc4a6a-3759-4722-870e-67354bfb800e.png" alt="">
+                    </a>
+                </div>
+                <div class="project md:w-2/5 lg:w-1/4 md:h-80 lg:h-80">
+                    <div class="project-browser">
+                        <div class="project-circle"></div>
+                        <div class="project-circle"></div>
+                        <div class="project-circle"></div>
+                    </div>
+                    <a href="" target="_blank" rel="noreferrer">
+                        <img class="project-img" src="https://user-images.githubusercontent.com/84854612/178147867-91536766-9ad7-4195-87e6-6c2a1bd5d99f.png" alt="">
+                    </a>
+                </div>
+                <div class="project md:w-2/5 lg:w-1/4 md:h-80 lg:h-80">
+                    <div class="project-browser">
+                        <div class="project-circle"></div>
+                        <div class="project-circle"></div>
+                        <div class="project-circle"></div>
+                    </div>
+                    <a href="" target="_blank" rel="noreferrer">
+                        <img class="project-img" src="https://user-images.githubusercontent.com/84854612/178147727-0cd0b15a-4430-4d8c-a06a-28e705ccee39.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section  -->
+    <section id="contact">
+        <!-- flex container  -->
+        <div class="contact md:h-full">
+            <div class="contact-bg"></div>
+            <div class="wrapper flex flex-col md:flex-row">
+                <!-- left item  -->
+                <div class="c-left">
+                    <h1 class="c-title text-2xl font-medium md:text-6xl md:font-extrabold md:w-3/4">Let's discuss your project</h1>
+                    <!-- address info  -->
+                    <div class="c-info">
+                        <div class="c-info-item">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            +233 554824341 
+                        </div>
+                        <div class="c-info-item">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            fiificode@gmail.com 
+                        </div>
+                        <div class="c-info-item">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Accra,Ghana. 
+                        </div>
+                    </div>
+                </div>
+                <!-- Right item  -->
+                <div class="c-right">
+                    <p class="c-desc">
+                        <b>What's your story?</b>
+                        Get in touch. Always freelancing if the right project comes along.
+                    </p>
+                    <form action="https://formsubmit.co/fiificode@gmail.com" method="POST">
+                        <input type="text" placeholder="Name" name="user_name" required>
+                        <input type="text" placeholder="Subject" name="user_subject" required>
+                        <input type="email" placeholder="Email" name="user_email" required>
+                        <textarea name="message" id="" cols="10" rows="5" placeholder="Message"></textarea>
+                        <button id="submit" type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
