@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my-portfolio",
+  "main": "../src/index.html",
+  "scripts": {
+    "dev": "./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiificode/portfolio.git"
+  },
+  "author": "franklin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fiificode/portfolio/issues"
+  },
+  "homepage": "https://github.com/fiificode/portfolio#readme"
+}
